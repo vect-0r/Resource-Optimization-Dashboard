@@ -1,5 +1,20 @@
 # Resource Optimization Dashboard
-A user-friendly Grafana dashboard in a Prometheus environment to help organizations monitor their K8s cluster resource allocation by identifying undersized and oversized deployments leading to significant decrement in cloud costs
+A dashboard for monitoring K8s cluster resource allocation and save cloud costs
+
+# Problem Statement
+In a Kubernetes environment where Prometheus is being used as the primary monitoring tool, the task is to design a Grafana 
+dashboard. The goal of this dashboard is to help identify deployments (exclude statefulsets, daemonsets, cronjobs etc) that 
+are potentially oversized or undersized, thereby facilitating cost optimization through resource adjustments.
+
+Oversized Deployment: If a deployment requests a large amount of CPU or memory but only uses a fraction of it, it is 
+considered "oversized" as it inefficiently consumes resources. 
+
+Undersized Deployment: If a deployment consistently maxes out its requested CPU or memory, leading to potential performance 
+issues, it is considered "undersized". 
+
+The aim of the dashboard is to quickly and intuitively highlight 
+these inefficiencies, which in turn would facilitate informed decision-making and optimize resource utilization.
+
 
 # Few Snapshots of the Dashboard
 ![CPU_Percentage_of_Limit](https://github.com/vect-0r/Resource-Optimization-Dashboard/assets/56092166/6bf150ff-2c0a-4ff3-896f-45bb57b37bfc)

@@ -1,7 +1,5 @@
 # Resource Optimization Dashboard
-A dashboard for monitoring K8s cluster resource allocation
 
-# Problem Statement
 In a Kubernetes environment where Prometheus is being used as the primary monitoring tool, the task is to design a Grafana 
 dashboard. The goal of this dashboard is to help identify deployments (exclude statefulsets, daemonsets, cronjobs etc) that 
 are potentially oversized or undersized, thereby facilitating cost optimization through resource adjustments.

@@ -1,5 +1,5 @@
 # Resource Optimization Dashboard
-A dashboard for monitoring K8s cluster resource allocation and save cloud costs
+A dashboard for monitoring K8s cluster resource allocation
 
 # Problem Statement
 In a Kubernetes environment where Prometheus is being used as the primary monitoring tool, the task is to design a Grafana 
